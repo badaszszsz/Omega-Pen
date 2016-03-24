@@ -196,7 +196,7 @@ namespace Epic_Pen
             trayIcon.Icon = new System.Drawing.Icon(GetType(), "pencilIcon.ico");
             trayIcon.Visible = true;
             //notify icon:
-            System.Windows.Forms.MenuItem about = new System.Windows.Forms.MenuItem("About Epic Pen");
+            System.Windows.Forms.MenuItem about = new System.Windows.Forms.MenuItem("About Omega Pen");
             about.Click += new EventHandler(about_Click);
             enableHotkeys = new System.Windows.Forms.MenuItem("Enable hotkeys");
             enableHotkeys.Checked = true;
@@ -245,6 +245,7 @@ namespace Epic_Pen
 
             inkCanvas.Cursor = Cursors.Pen;
             inkCanvas.UseCustomCursor = true;
+            inkCanvas.DefaultDrawingAttributes.FitToCurve = true;
             inkCanvas.DefaultDrawingAttributes.IgnorePressure = false;
 
             toolsWindow.setInkCanvas(inkCanvas);
@@ -258,6 +259,10 @@ namespace Epic_Pen
             toolsWindow.penButton.Click += new RoutedEventHandler(drawButton_Click);
             toolsWindow.highlighterButton.Click += new RoutedEventHandler(drawButton_Click);
             toolsWindow.eraserButton.Click += new RoutedEventHandler(drawButton_Click);
+            toolsWindow.rectButton.Click += new RoutedEventHandler(drawButton_Click);
+            toolsWindow.circleButton.Click += new RoutedEventHandler(drawButton_Click);
+            toolsWindow.arrowButton.Click += new RoutedEventHandler(drawButton_Click);
+
             cursorButton_Click(new object(), new RoutedEventArgs());
             toolsWindow.Show();
         }

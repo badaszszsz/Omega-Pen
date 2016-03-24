@@ -1,0 +1,14 @@
+﻿<Window x:Class="Epic_Pen.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About Omega Pen" Height="300" Width="300" ResizeMode="NoResize" Icon="icons/Pen16.png">
+    <Grid Background="#FFB9CBF1">
+        <TextBox x:Name="aboutText" HorizontalAlignment="Left" Height="204" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="272" Background="#4CFFFFFF"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="272" Height="26">
+        <Hyperlink NavigateUri="https://github.com/xemjeff/Omega-Pen.git" RequestNavigate="Hyperlink_RequestNavigate">
+            Github Repository for OmegaPen
+        </Hyperlink>
+        </TextBlock>
+    </Grid>
+</Window>

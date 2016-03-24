@@ -237,7 +237,7 @@
         </ResourceDictionary>
     </Window.Resources>
 
-    <DockPanel>
+    <DockPanel Width="400">
     <Border DockPanel.Dock="Top" BorderThickness="2"  BorderBrush="Black" MouseLeftButtonDown="MouseLeftButtonDown" ClipToBounds="True">
         <Grid>
             <DockPanel>
@@ -247,15 +247,15 @@
                             <Viewbox>
                                 <Canvas Width="100" Height="100">
                                     <Line
-    X1="25" Y1="25"
-    X2="75" Y2="75"
-    Stroke="White"
-    StrokeThickness="14" />
+                                        X1="25" Y1="25"
+                                        X2="75" Y2="75"
+                                        Stroke="White"
+                                        StrokeThickness="14" />
                                     <Line
-    X1="75" Y1="25"
-    X2="25" Y2="75"
-    Stroke="White"
-    StrokeThickness="14" />
+                                        X1="75" Y1="25"
+                                        X2="25" Y2="75"
+                                        Stroke="White"
+                                        StrokeThickness="14" />
 
                                 </Canvas>
                             </Viewbox>
@@ -265,30 +265,32 @@
                                 <CheckBox  Name="hideInkCheckBox" ToolTip="(Ctrl + 1)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0,0,0" Checked="clickThroughCheckBox_Checked" Unchecked="clickThroughCheckBox_Checked" Foreground="White" Cursor="Hand" />
                                 <TextBlock Text="Hide ink" Foreground="White" VerticalAlignment="Center" Margin="3,0,0,0" />
                             </StackPanel>
-                            <TextBlock TextOptions.TextFormattingMode="Ideal" Text="EPIC PEN" Foreground="White" VerticalAlignment="Center" Margin="6,-2,6,0" TextAlignment="Right" HorizontalAlignment="Right" FontSize="16" FontWeight="Bold" FontStyle="Italic" />
+                            <TextBlock TextOptions.TextFormattingMode="Ideal" Text="Omega Pen" Foreground="White" VerticalAlignment="Center" Margin="6,-2,6,0" TextAlignment="Right" HorizontalAlignment="Right" FontSize="16" FontWeight="Bold" FontStyle="Italic" />
                         </Grid>
                     </DockPanel>
                     <DockPanel Name="toolsDockPanel" LastChildFill="False">
                         <Border DockPanel.Dock="Right" Background="Black" Width="50" Name="selectedColourBorder" Margin="0,4,4,4" />
                         <StackPanel Margin="4,4,4,4">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,3">
-                                <Border Width="12" Height="12" Background="Black" Margin="0,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Red" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Blue" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Green" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Orange" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Brown" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Purple" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Yellow" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Firebrick" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Pink" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="Snow" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="DarkGray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Gray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="SlateGray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Violet" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="SpringGreen" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Black" Margin="0,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Purple" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Red" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="LightCoral" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Pink" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Orange" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Yellow" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="LightGreen" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="YellowGreen" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-
-                            </StackPanel>
+                                <Border Width="12" Height="12" Background="LightBlue" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Blue" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Teal" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Green" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="SpringGreen" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                            </StackPanel>                            
                             <StackPanel Name="brushSizeStackPanel" Orientation="Horizontal">
                                 <Button Style="{StaticResource highlightedButtonStyle}" Width="28" Height="28" Margin="0,0,0,0" Cursor="Hand" Click="penSizeButton_MouseDown"  >
                                     <Ellipse Width="2" Height="2" Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" />
@@ -303,136 +305,150 @@
                                     <Ellipse Width="16" Height="16" Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" />
                                 </Button>
                             </StackPanel>
+                            
                             <StackPanel Orientation="Horizontal" Name="toolStackPanel">
                                 <Button Cursor="Hand" Style="{StaticResource highlightedButtonStyle}" Name="cursorButton" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="Cursor (Cntl + 2)" Click="cursorButton_Click" BorderBrush="Red" Margin="0,2,2,2" IsTabStop="False">
-                                    <Viewbox Width="25">
-                                        <Canvas Width="100.000" Height="100.001">
-
-                                            <Canvas>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 4.744,4.744 C -1.581,11.069 -1.581,21.322 4.744,27.647 L 27.646,4.744 C 21.322,-1.581 11.068,-1.581 4.744,4.744 Z"/>
-
-                                                <!-- Layer 1/<Compound Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 66.105,73.647 C 68.188,71.563 72.128,72.130 72.998,73.000 C 72.130,72.132 71.563,68.188 73.645,66.106 C 75.727,64.024 79.887,63.284 79.887,63.284 L 89.198,85.754 L 85.752,89.200 L 63.282,79.890 C 63.282,79.890 64.023,75.729 66.105,73.647 Z M 60.893,83.795 L 100.000,100.001 L 83.795,60.894 L 33.914,11.014 L 11.012,33.915 L 60.893,83.795 Z"/>
-
-                                            </Canvas>
-                                        </Canvas>
+                                    <Viewbox Width="25" Height="25">
+                                        <Grid>
+                                            <Grid Name="backgroundGridCursor" Width="100" Height="100" Visibility="Collapsed" />
+                                            <Path Data="M0,0L26.500032,10.099998C22.699979,11,19.699975,12.400002,17.50002,13.800003L31.900001,27.800003 28.000033,32 13.199967,17.599998C9.2999984,22.400002,10.000012,27.400002,10.000012,27.400002z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <TransformGroup.Children>
+                                                            <RotateTransform Angle="0" />
+                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                        </TransformGroup.Children>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
                                     </Viewbox>
                                 </Button>
-                                <Button Cursor="Hand" Name="penButton" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="Pencil (Cntl + 3)" Click="penButton_Click">
+                                <Button Cursor="Hand" Name="penButton" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTip="Pen (Cntl + 3)" Click="penButton_Click">
                                     <Viewbox Width="25" Height="25">
-                                        <Canvas Width="100.000" Height="100.001">
+                                        <Grid>
+                                            <Grid Name="backgroundGrid3" Width="100" Height="100" Visibility="Collapsed" />
+                                            <Path Data="M17.327669,7.1351199L24.862593,14.672122C23.581602,16.132145 22.194622,17.621132 20.706631,19.111155 11.68573,28.132168 2.6258275,33.693182 0.46483937,31.535161 -1.6931275,29.37616 3.8677882,20.314162 12.888721,11.293117 14.378695,9.8041311 15.866686,8.4171348 17.327669,7.1351199z M30.204518,9.6572883E-05C30.776503,0.0040941553 31.226509,0.15509543 31.535498,0.46411702 32.677485,1.6051104 31.655522,4.6771074 29.109528,8.6501375L29.016543,8.7921357 29.04953,8.8341279C29.926537,9.9971242 30.309527,12.025144 29.428524,13.536133 28.203531,15.644139 22.923588,20.572157 22.923588,20.572157 22.324595,21.172133 21.738604,21.243147 20.860621,20.744154L27.234547,14.371126C28.380531,13.223144,28.712528,11.580136,28.250559,10.133142L28.206553,10.003137 28.084545,10.180139C27.476549,11.051143,26.805567,11.956143,26.078554,12.88513L19.11363,5.9211283C23.852595,2.2110992,27.961559,-0.016901978,30.204518,9.6572883E-05z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <TransformGroup.Children>
+                                                            <RotateTransform Angle="0" />
+                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                        </TransformGroup.Children>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
+                                    </Viewbox>
 
-
-                                                <!-- Layer 1/<Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 4.744,4.744 C -1.581,11.069 -1.581,21.322 4.744,27.647 L 27.646,4.744 C 21.322,-1.581 11.068,-1.581 4.744,4.744 Z"/>
-
-                                                <!-- Layer 1/<Compound Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 66.105,73.647 C 68.188,71.563 72.128,72.130 72.998,73.000 C 72.130,72.132 71.563,68.188 73.645,66.106 C 75.727,64.024 79.887,63.284 79.887,63.284 L 89.198,85.754 L 85.752,89.200 L 63.282,79.890 C 63.282,79.890 64.023,75.729 66.105,73.647 Z M 60.893,83.795 L 100.000,100.001 L 83.795,60.894 L 33.914,11.014 L 11.012,33.915 L 60.893,83.795 Z"/>
-
-                                        </Canvas>
+                                </Button>
+                                <Button Cursor="Hand" Name="highlighterButton" HorizontalAlignment="Center" VerticalAlignment="Center"  ToolTip="Highlight (Cntl + 4)" Click="highlighterButton_Click">
+                                    <Viewbox Width="25" Height="25">
+                                        <Grid>
+                                            <Grid Name="backgroundGridHighLight" Width="100" Height="100" Visibility="Collapsed" />
+                                            <Path Data="M1.0799898,27.68001L29.161071,27.68001C29.755067,27.68001,30.240083,28.165009,30.240083,28.760008L30.240083,30.92C30.240083,31.515999,29.755067,31.999998,29.161071,31.999998L1.0799898,31.999998C0.48397969,31.999998,-8.1828603E-08,31.515999,0,30.92L0,28.760008C-8.1828603E-08,28.165009,0.48397969,27.68001,1.0799898,27.68001z M8.6480069,19.001028C8.9100309,18.992033,9.1750159,19.093031,9.3820176,19.308028L12.680032,22.745024C13.093028,23.177021,13.127024,23.905016,12.754037,24.367022L12.505013,24.677017C12.136024,25.141014,11.344029,25.521017,10.750033,25.521017L3.3190105,25.521017C2.725991,25.521017,2.5730059,25.165016,2.9809964,24.735016L6.2930188,21.215029C6.7000022,20.780024,7.3490219,20.054028,7.7310114,19.600027L7.9380126,19.354033C8.1290231,19.129027,8.3870196,19.010031,8.6480069,19.001028z M28.421077,7.5224872E-05C29.274078,0.0060756106 30.123079,0.3330745 30.775089,0.98607288 32.005073,2.2110723 32.081092,4.1410678 31.027074,5.4710629L31.057073,5.4970634 30.775089,5.7800601 15.027024,21.529023 10.23102,16.733036 25.975055,0.9900745 26.261068,0.70407568 26.288076,0.73007284C26.913078,0.23907676,27.668085,-0.0049221356,28.421077,7.5224872E-05z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <TransformGroup.Children>
+                                                            <RotateTransform Angle="0" />
+                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                        </TransformGroup.Children>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
                                     </Viewbox>
                                 </Button>
-                                <Button Cursor="Hand" Name="highlighterButton" HorizontalAlignment="Center" VerticalAlignment="Center" Click="highlighterButton_Click">
-                                    <Viewbox Width="25" Height="25" >
-                                            <Canvas Width="100.000" Height="100.000">
-                                                <Canvas>
-                                                    <!-- Layer 1/<Compound Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 24.111,63.470 C 26.961,64.322 29.648,65.861 31.916,68.084 C 34.139,70.354 35.680,73.039 36.530,75.891 L 28.622,83.797 C 27.742,80.966 26.184,78.300 23.942,76.059 C 21.699,73.816 19.033,72.258 16.202,71.378 L 24.111,63.470 Z M 39.965,47.615 C 40.106,47.657 40.243,47.708 40.382,47.753 L 40.104,47.475 L 58.548,29.031 L 62.480,25.099 L 66.457,21.123 C 69.365,21.991 72.105,23.573 74.402,25.869 C 76.590,28.057 78.125,30.649 79.016,33.403 L 75.302,37.117 C 70.656,37.372 64.338,40.702 58.786,46.253 C 53.234,51.805 49.904,58.122 49.650,62.770 L 44.476,67.943 C 43.595,65.111 42.038,62.445 39.796,60.203 C 37.553,57.961 34.887,56.404 32.056,55.523 L 39.965,47.615 Z M 82.313,5.270 C 85.162,6.121 87.850,7.661 90.117,9.884 C 92.341,12.152 93.881,14.839 94.730,17.689 L 86.824,25.597 C 85.943,22.765 84.387,20.099 82.145,17.857 C 79.902,15.615 77.234,14.058 74.404,13.177 L 82.313,5.270 Z M 12.443,75.139 L 0.000,97.266 L 1.368,98.633 L 2.735,100.000 L 24.862,87.559 L 27.113,89.809 L 78.938,37.985 L 100.000,16.923 C 99.508,12.875 97.713,8.955 94.605,5.848 C 94.529,5.772 94.451,5.701 94.374,5.626 C 94.300,5.549 94.229,5.470 94.152,5.395 C 91.046,2.287 87.126,0.493 83.078,0.000 L 62.016,21.062 L 10.191,72.887 L 12.443,75.139 Z"/>
 
-                                                </Canvas>
-                                            </Canvas>
-                                        </Viewbox>
-                                    </Button>
-                                <Button Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" Click="eraserButton_Click" Name="eraserButton">
+                                <Button Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" Click="arrowButton_Click" ToolTip="Draw Arrow" Name="arrowButton">
                                     <Viewbox Width="25" Height="25">
-                                        <Canvas Width="100.000" Height="100.001">
-
-                                                <!-- Layer 1/<Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 4.744,4.744 C -1.581,11.069 -1.581,21.322 4.744,27.647 L 27.646,4.744 C 21.322,-1.581 11.068,-1.581 4.744,4.744 Z"/>
-
-                                                <!-- Layer 1/<Compound Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 66.105,73.647 C 68.188,71.563 72.128,72.130 72.998,73.000 C 72.130,72.132 71.563,68.188 73.645,66.106 C 75.727,64.024 79.887,63.284 79.887,63.284 L 89.198,85.754 L 85.752,89.200 L 63.282,79.890 C 63.282,79.890 64.023,75.729 66.105,73.647 Z M 60.893,83.795 L 100.000,100.001 L 83.795,60.894 L 33.914,11.014 L 11.012,33.915 L 60.893,83.795 Z"/>
-
-                                        </Canvas>
+                                        <Grid>
+                                            <Grid Name="backgroundGridArrow" Width="100" Height="100" Visibility="Collapsed" />
+                                            <Path Data="M30.299999,0L10.000001,26.699997 13.6,32 0,32 2.0999986,15.299997 5.6999975,20.6z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <TransformGroup.Children>
+                                                            <RotateTransform Angle="0" />
+                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                        </TransformGroup.Children>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
                                     </Viewbox>
                                 </Button>
-                                <Button Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" Click="eraseAllButton_Click" Name="eraseAllButton">
-                                    <!-- Generated by Adobe Illustrator CS -> XAML Export Plug-In Version 0.19 PC   -->
-                                    <!-- For questions, contact Mike Swanson: http://www.mikeswanson.com/XAMLExport -->
 
+                                <Button Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center"  Click="rectButton_Click" ToolTip="Draw Rect " Name="rectButton">
                                     <Viewbox Width="25" Height="25">
-                                        <Canvas Width="94.405" Height="100.000">
+                                        <Grid>
+                                            <Grid Name="backgroundGrid" Width="100" Height="100" Visibility="Collapsed" />
+                                            <Path Data="M2,2L2,19 30,19 30,2z M0,0L32,0 32,21 0,21z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <TransformGroup.Children>
+                                                            <RotateTransform Angle="0" />
+                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                        </TransformGroup.Children>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
+                                    </Viewbox>
+                                </Button>
 
+                                <Button Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" Click="circleButton_Click" ToolTip="Draw Circle" Name="circleButton">
+                                    <Viewbox Width="25" Height="25">
+                                    <Grid>
+                                        <Grid Name="backgroundCircle" Width="100" Height="100" Visibility="Collapsed" />
+                                        <Path Data="M16,1.9999991C8.2799683,1.9999989 2,5.967999 2,10.844004 2,15.719993 8.2799683,19.687001 16,19.687001 23.719971,19.687001 30,15.719993 30,10.844004 30,5.967999 23.719971,1.9999989 16,1.9999991z M16,0C24.82196,-1.7716957E-08 32,4.8639956 32,10.844004 32,16.822989 24.82196,21.686999 16,21.686999 7.1779785,21.686999 0,16.822989 0,10.844004 0,4.8639956 7.1779785,-1.7716957E-08 16,0z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <TransformGroup.Children>
+                                                        <RotateTransform Angle="0" />
+                                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                    </TransformGroup.Children>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                    </Grid>
+                                    </Viewbox>
+                                </Button>
 
-                                                <!-- Layer 1/<Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 84.467,19.631 C 85.148,19.631 85.701,20.184 85.701,20.865 C 85.701,21.546 85.148,22.099 84.467,22.099 C 83.786,22.099 83.233,21.546 83.233,20.865 C 83.233,20.184 83.786,19.631 84.467,19.631 Z"/>
+                                <Button Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center"  ToolTip="Eraser (Cntl + 5)" Click="eraserButton_Click" Name="eraserButton">
+                                    <Viewbox Width="25" Height="25">
+                                        <Grid>
+                                            <Grid Name="backgroundGridErase" Width="100" Height="100" Visibility="Collapsed" />
+                                            <Path Data="M2.2927691,29.869995L29.987991,29.869995C30.572986,29.869995 31.051994,30.350006 31.051994,30.93399 31.051994,31.522003 30.572986,32 29.987991,32L2.2927691,32C1.7077578,32 1.2287654,31.522003 1.2287652,30.93399 1.2287654,30.350006 1.7077578,29.869995 2.2927691,29.869995z M9.8858304,11.558014L2.1267674,19.368011 7.0638022,24.429993C7.4928064,24.862,8.5888075,25.610016,9.1948151,25.610016L12.466844,25.610016C13.073843,25.610016,13.934858,24.862,14.364853,24.429993L18.478898,20.153992z M19.202903,0C19.747905,0,20.292909,0.24398804,20.707904,0.65899658L29.412975,9.3980103C30.240983,10.225006,30.240983,11.653992,29.412975,12.483002L16.103881,25.936005C15.274865,26.766998,13.640849,27.73999,12.466844,27.73999L9.1948151,27.73999C8.0238165,27.73999,6.3878021,26.766998,5.5577931,25.936005L0.62175103,20.708008C-0.20725034,19.880005,-0.20725034,18.52301,0.62175103,17.697998L17.69688,0.6210022C18.108886,0.20599365,18.656894,0,19.202903,0z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <TransformGroup.Children>
+                                                            <RotateTransform Angle="0" />
+                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                        </TransformGroup.Children>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
+                                    </Viewbox>
+                                </Button>
 
-                                                <!-- Layer 1/<Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 88.819,19.630 C 89.501,19.630 90.055,20.183 90.055,20.865 C 90.055,21.547 89.501,22.100 88.819,22.100 C 88.137,22.100 87.584,21.547 87.584,20.865 C 87.584,20.183 88.137,19.630 88.819,19.630 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 93.171,19.631 C 93.853,19.631 94.405,20.184 94.405,20.865 C 94.405,21.546 93.853,22.099 93.171,22.099 C 92.489,22.099 91.938,21.546 91.938,20.865 C 91.938,20.184 92.489,19.631 93.171,19.631 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 81.268,11.904 C 81.949,11.904 82.502,12.457 82.502,13.139 C 82.502,13.821 81.949,14.374 81.268,14.374 C 80.585,14.374 80.032,13.821 80.032,13.139 C 80.032,12.457 80.585,11.904 81.268,11.904 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 84.345,8.827 C 85.026,8.827 85.579,9.380 85.579,10.062 C 85.579,10.744 85.026,11.297 84.345,11.297 C 83.662,11.297 83.109,10.744 83.109,10.062 C 83.109,9.380 83.662,8.827 84.345,8.827 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 87.422,5.749 C 88.104,5.749 88.657,6.302 88.657,6.984 C 88.657,7.666 88.104,8.219 87.422,8.219 C 86.740,8.219 86.188,7.666 86.188,6.984 C 86.188,6.302 86.740,5.749 87.422,5.749 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 73.542,8.704 C 74.225,8.704 74.777,9.257 74.777,9.939 C 74.777,10.621 74.225,11.174 73.542,11.174 C 72.860,11.174 72.308,10.621 72.308,9.939 C 72.308,9.257 72.860,8.704 73.542,8.704 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 73.542,4.352 C 74.225,4.352 74.777,4.905 74.777,5.587 C 74.777,6.269 74.225,6.822 73.542,6.822 C 72.860,6.822 72.308,6.269 72.308,5.587 C 72.308,4.905 72.860,4.352 73.542,4.352 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 73.542,0.000 C 74.225,0.000 74.777,0.553 74.777,1.235 C 74.777,1.917 74.225,2.470 73.542,2.470 C 72.860,2.470 72.308,1.917 72.308,1.235 C 72.308,0.553 72.860,0.000 73.542,0.000 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 65.817,11.904 C 66.499,11.904 67.052,12.457 67.052,13.139 C 67.052,13.821 66.499,14.374 65.817,14.374 C 65.135,14.374 64.582,13.821 64.582,13.139 C 64.582,12.457 65.135,11.904 65.817,11.904 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 62.739,8.827 C 63.421,8.827 63.975,9.380 63.975,10.062 C 63.975,10.744 63.421,11.297 62.739,11.297 C 62.058,11.297 61.504,10.744 61.504,10.062 C 61.504,9.380 62.058,8.827 62.739,8.827 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 59.662,5.749 C 60.345,5.749 60.897,6.302 60.897,6.984 C 60.897,7.666 60.345,8.219 59.662,8.219 C 58.980,8.219 58.427,7.666 58.427,6.984 C 58.427,6.302 58.980,5.749 59.662,5.749 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 81.268,27.339 C 81.949,27.339 82.502,27.892 82.502,28.574 C 82.502,29.256 81.949,29.809 81.268,29.809 C 80.585,29.809 80.032,29.256 80.032,28.574 C 80.032,27.892 80.585,27.339 81.268,27.339 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 84.346,30.417 C 85.027,30.417 85.580,30.970 85.580,31.652 C 85.580,32.334 85.027,32.887 84.346,32.887 C 83.663,32.887 83.110,32.334 83.110,31.652 C 83.110,30.970 83.663,30.417 84.346,30.417 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 87.422,33.494 C 88.104,33.494 88.657,34.047 88.657,34.729 C 88.657,35.411 88.104,35.964 87.422,35.964 C 86.740,35.964 86.188,35.411 86.188,34.729 C 86.188,34.047 86.740,33.494 87.422,33.494 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 73.542,30.539 C 74.225,30.539 74.777,31.092 74.777,31.774 C 74.777,32.456 74.225,33.009 73.542,33.009 C 72.860,33.009 72.308,32.456 72.308,31.774 C 72.308,31.092 72.860,30.539 73.542,30.539 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 73.542,34.891 C 74.225,34.891 74.777,35.444 74.777,36.126 C 74.777,36.808 74.225,37.361 73.542,37.361 C 72.860,37.361 72.308,36.808 72.308,36.126 C 72.308,35.444 72.860,34.891 73.542,34.891 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 73.542,39.244 C 74.225,39.244 74.777,39.797 74.777,40.479 C 74.777,41.161 74.225,41.714 73.542,41.714 C 72.860,41.714 72.308,41.161 72.308,40.479 C 72.308,39.797 72.860,39.244 73.542,39.244 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 65.817,27.339 C 66.499,27.339 67.052,27.892 67.052,28.574 C 67.052,29.256 66.499,29.809 65.817,29.809 C 65.135,29.809 64.582,29.256 64.582,28.574 C 64.582,27.892 65.135,27.339 65.817,27.339 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                                <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 62.739,30.417 C 63.421,30.417 63.975,30.970 63.975,31.652 C 63.975,32.334 63.421,32.887 62.739,32.887 C 62.058,32.887 61.504,32.334 61.504,31.652 C 61.504,30.970 62.058,30.417 62.739,30.417 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 59.662,33.494 C 60.345,33.494 60.897,34.047 60.897,34.729 C 60.897,35.411 60.345,35.964 59.662,35.964 C 58.980,35.964 58.427,35.411 58.427,34.729 C 58.427,34.047 58.980,33.494 59.662,33.494 Z"/>
-
-                                                <!-- Layer 1/<Path> -->
-                                            <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}, Path=Foreground}" Data="F1 M 44.223,37.259 L 44.223,30.611 C 44.223,29.357 43.204,28.340 41.951,28.340 L 34.069,28.340 C 34.566,23.355 38.783,19.449 43.897,19.449 C 46.896,19.449 49.316,20.693 51.878,21.791 C 54.567,22.943 57.341,24.131 60.837,24.131 C 61.195,24.131 61.564,24.119 61.938,24.092 C 65.067,23.872 72.997,21.820 73.333,21.733 L 72.591,18.876 C 72.514,18.897 64.591,20.947 61.732,21.147 C 58.419,21.380 55.808,20.261 53.043,19.077 C 50.318,17.910 47.502,16.496 43.898,16.496 C 37.156,16.496 31.617,21.724 31.110,28.339 L 22.993,28.339 C 21.739,28.339 20.723,29.356 20.723,30.610 L 20.723,37.258 C 8.599,41.969 0.000,53.741 0.000,67.529 C 0.000,85.463 14.538,100.000 32.472,100.000 C 50.404,100.000 64.943,85.463 64.943,67.529 C 64.943,53.741 56.345,41.969 44.223,37.259 Z"/>
-
-                                        </Canvas>
+                                <Button Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" Click="eraseAllButton_Click"  ToolTip="Erase All (Cntl + 6)" Name="eraseAllButton">
+                                    <!-- Generated automatically by MetroStudio -->
+                                    <!-- For questions, contact Jeff Sprenger at Xemory Software: (jeff@xemory.com -->
+                                    <Viewbox Width="25" Height="25">
+                                        <Grid>
+                                            <Grid Name="backgroundGrid2" Width="100" Height="100" Visibility="Collapsed" />
+                                            <Path Data="M20.008871,10.900169L12.408899,19.200307C12.408899,19.200307,17.708841,27.200435,18.408848,28.900458L20.508867,27.700442C20.508867,27.700442 19.00888,24.800395 18.108864,24.000386 18.108864,24.000386 17.308881,22.900363 18.708833,23.30037 18.708833,23.30037 21.908819,26.000419 22.408813,26.200419L24.508833,24.300387C24.508833,24.300387,24.208786,23.600379,23.808826,23.100369L21.308847,20.300323C21.308847,20.300323 20.808851,19.400306 21.908819,19.700314 21.908819,19.700314 24.608808,21.900346 26.308805,22.400355L28.008802,20.100322C28.008802,20.100322 24.908792,17.100274 24.708782,16.600266 24.708782,16.600266 24.208786,16.100257 24.908792,16.000258 24.908792,16.000258 28.108778,18.20029 29.30878,18.100289 29.30878,18.100289 30.308771,16.200257 30.208734,16.100257 30.108761,15.900249 21.508857,11.900186 20.008871,10.900169z M19.708824,8.5001373C22.608824,11.100177 30.508781,14.100225 30.508781,14.100225 32.708715,14.600233 31.808758,16.400258 31.808758,16.400258 28.008802,25.400403 19.00888,30.400483 19.00888,30.400483 17.408857,31.500506 16.608875,29.100467 16.608875,29.100467 14.808903,25.400403 10.108931,19.100306 10.108931,19.100306z M1.8090139,0C2.0090243,5.2599489E-08,2.1089992,5.2599489E-08,2.2089738,0.10000036L10.908911,8.0001287C11.008948,8.1001291,11.008948,8.2001285,11.108923,8.3001289L13.008931,6.300097C14.608892,5.4000806,16.008905,6.2000966,16.008905,6.2000966L18.308874,7.8001208 9.0089643,17.800282 7.4089419,15.600249C6.4089501,13.600218,7.6089522,12.200193,7.6089522,12.200193L9.2089145,10.400162C9.1089399,10.400162,9.0089643,10.400162,8.9089286,10.300161L0.20899085,2.4000327C0.0090414112,2.2000324,-0.090994357,1.9000245,0.10901623,1.6000244L1.4089929,0.10000036C1.6090034,0.10000013,1.7089781,5.2599489E-08,1.8090139,0z" Stretch="Uniform" Fill="#FFFFFFFF" Width="54" Height="54" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <TransformGroup.Children>
+                                                            <RotateTransform Angle="0" />
+                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                        </TransformGroup.Children>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
                                     </Viewbox>
                                 </Button>
                             </StackPanel>
@@ -449,6 +465,11 @@
             </DockPanel>
         </Grid>
         </Border>
-        <Grid/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="219*"/>
+                <ColumnDefinition Width="281*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
     </DockPanel>    
 </Window>
