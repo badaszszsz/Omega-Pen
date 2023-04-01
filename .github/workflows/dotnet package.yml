@@ -2,23 +2,39 @@ name: dotnet package
 
 on: [push]
 
-jobs:
-  build:
+#on:
+#  push:
+#    tags:
+#      - "release/v*"
 
-    runs-on: ubuntu-latest
+
+env:
+    PROJECT_PATH: 'Epic Pen/Epic Pen.csproj'
+
+jobs:
+  buildAndDeploy:
+    runs-on: windows-latest
     strategy:
       matrix:
-        dotnet-version: [ '3.1.x', '6.0.x' ]
+        dotnet-version: [ '6.0.400' ]
+        #        dotnet-version: [ '4.x.x', '6.0.x' ]
 
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
+
       - name: Install dependencies
-        run: dotnet restore
+        run: dotnet restore "${{ env.PROJECT_PATH }}"
+
       - name: Build
-        run: dotnet build --configuration Release --no-restore --self-contained -r win-x64
-      - name: Test
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet build "${{ env.PROJECT_PATH }}" --configuration Release --no-restore -v:diag
+        #
+        #      - name: Build
+        #        run: dotnet build "${{ env.PROJECT_PATH }}" --configuration Release --no-restore #--self-contained -r win-x64
+        #
+        #      - name: Publish
+        #        run: dotnet publish "${{ env.PROJECT_PATH }}" --configuration Release --self-contained -r win-x64
