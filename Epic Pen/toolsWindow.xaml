@@ -273,23 +273,17 @@
                         <StackPanel Margin="4,4,4,4">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,3">
                                 <Border Width="12" Height="12" Background="Snow" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="DarkGray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Gray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="SlateGray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="Black" Margin="0,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Purple" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Red" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="DarkGray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="LightGray" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="LightCoral" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Pink" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="Orange" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Yellow" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="LightGreen" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="YellowGreen" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="LightBlue" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Blue" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
-                                <Border Width="12" Height="12" Background="Teal" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="Green" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                                 <Border Width="12" Height="12" Background="SpringGreen" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="MediumAquamarine" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="LightBlue" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
+                                <Border Width="12" Height="12" Background="Bisque" Margin="1,0,0,0" MouseDown="Border_MouseDown" Cursor="Hand" />
                             </StackPanel>                            
                             <StackPanel Name="brushSizeStackPanel" Orientation="Horizontal">
                                 <Button Style="{StaticResource highlightedButtonStyle}" Width="28" Height="28" Margin="0,0,0,0" Cursor="Hand" Click="penSizeButton_MouseDown"  >
