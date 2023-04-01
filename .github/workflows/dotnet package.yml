@@ -17,5 +17,5 @@ jobs:
 
     - name: Build
       run: |
-        msbuild.exe "Epic Pen/Epic Pen.sln" /t:Build /p:Configuration=Release
+        msbuild.exe "Epic Pen.sln" /t:Build /p:Configuration=Release
 
