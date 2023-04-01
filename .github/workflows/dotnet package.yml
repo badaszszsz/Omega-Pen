@@ -1,40 +1,21 @@
-name: dotnet package
+name: Build
 
 on: [push]
-
-#on:
 #  push:
-#    tags:
-#      - "release/v*"
-
-
-env:
-    PROJECT_PATH: 'Epic Pen/Epic Pen.csproj'
+#    branches:
+#      - main
 
 jobs:
-  buildAndDeploy:
+  build:
     runs-on: windows-latest
-    strategy:
-      matrix:
-        dotnet-version: [ '6.0.400' ]
-        #        dotnet-version: [ '4.x.x', '6.0.x' ]
-
+    
     steps:
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
 
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+    - name: Setup MSBuild path
+      uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Install dependencies
-        run: dotnet restore "${{ env.PROJECT_PATH }}"
+    - name: Build
+      run: |
+        msbuild.exe "Epic Pen.sln" /t:Build /p:Configuration=Release
 
-      - name: Build
-        run: dotnet build "${{ env.PROJECT_PATH }}" --configuration Release --no-restore -v:diag
-        #
-        #      - name: Build
-        #        run: dotnet build "${{ env.PROJECT_PATH }}" --configuration Release --no-restore #--self-contained -r win-x64
-        #
-        #      - name: Publish
-        #        run: dotnet publish "${{ env.PROJECT_PATH }}" --configuration Release --self-contained -r win-x64
