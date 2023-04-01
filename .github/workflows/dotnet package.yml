@@ -8,14 +8,21 @@ on: [push]
 jobs:
   build:
     runs-on: windows-latest
-    
+    strategy:
+      matrix:
+        arch: [ 'x86', 'x64'] 
+        #arch: [ 'x86', 'x64', 'arm64' ] # arm64 problem - https://github.com/badaszszsz/Omega-Pen/actions/runs/4585289763/jobs/8097343823 unable to find MSBuild
+       # vs-version: [(dotnet: '6.0.x', vs-version: '[17.0, 18.0)')]
+
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Setup MSBuild path
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v1.1
+      with:
+        msbuild-architecture: ${{ matrix.arch }}
+        #vs-version: '[16.0, 17.0)' - cannot find it on windows-latest?
 
     - name: Build
-      run: |
-        msbuild.exe "Epic Pen.sln" /t:Build /p:Configuration=Release
+      run: msbuild "Epic Pen.sln" -t:build -property:Configuration=Release -verbosity:diag -p:TargetFrameworkVersion=v6.0
 
