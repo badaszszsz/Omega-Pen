@@ -96,6 +96,8 @@ namespace Epic_Pen
             _4=0x34,
             _5=0x35,
             _6=0x36,
+            _7=0x37,
+            _8=0x38,
         }
 
         private void SetupHotKey(IntPtr handle)
@@ -106,6 +108,8 @@ namespace Epic_Pen
             RegisterHotKey(handle, GetType().GetHashCode(), 2, (int)hotkeys._4);
             RegisterHotKey(handle, GetType().GetHashCode(), 2, (int)hotkeys._5);
             RegisterHotKey(handle, GetType().GetHashCode(), 2, (int)hotkeys._6);
+            RegisterHotKey(handle, GetType().GetHashCode(), 2, (int)hotkeys._7);
+            RegisterHotKey(handle, GetType().GetHashCode(), 2, (int)hotkeys._8);
         }
 
         
@@ -143,7 +147,17 @@ namespace Epic_Pen
                     ClickThrough = false;
                 }
                 else if (key == hotkeys._6)
+                {
                     toolsWindow.eraseAllButton_Click(new object(), new RoutedEventArgs());
+                }
+                else if (key == hotkeys._7)
+                {
+                    toolsWindow.Set(new object(), new RoutedEventArgs());
+                }
+                else if (key == hotkeys._8)
+                {
+                    toolsWindow.eraseAllButton_Click(new object(), new RoutedEventArgs());
+                }
             }
         }
 
