@@ -143,7 +143,7 @@ namespace Epic_Pen
             SelectInkColor(c);
         }
 
-        private void SelectInkColor(Color color)
+        public void SelectInkColor(Color color)
         {
             selectedColourBorder.Background = new SolidColorBrush(color);
             inkCanvas.DefaultDrawingAttributes.Color = color;

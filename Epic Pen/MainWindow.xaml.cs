@@ -96,8 +96,8 @@ namespace Epic_Pen
             _4=0x34,
             _5=0x35,
             _6=0x36,
-            _7=0x37,
-            _8=0x38,
+            _7=0x51,
+            _8=0x57,
         }
 
         private void SetupHotKey(IntPtr handle)
@@ -152,11 +152,11 @@ namespace Epic_Pen
                 }
                 else if (key == hotkeys._7)
                 {
-                    toolsWindow.Set(new object(), new RoutedEventArgs());
+                    toolsWindow.SelectInkColor(Color.FromRgb(20,20,20));
                 }
                 else if (key == hotkeys._8)
                 {
-                    toolsWindow.eraseAllButton_Click(new object(), new RoutedEventArgs());
+                    toolsWindow.SelectInkColor(Color.FromRgb(230, 230, 230));
                 }
             }
         }
